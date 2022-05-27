@@ -1,14 +1,12 @@
-def check_username():
+def check_auth():
     username = input("Enter username: ")
     if username == "Akash":
-        return True
-        
-def check_password():
-    password = input("Enter password: ")
-    if password == "Hello":
-        return True
+        password = input("Enter password: ")
+        if password == "Hello":
+            print("Login success")
+        else:
+            print("Password is incorrect.")
+    else:
+        print("Invalid username.")
 
-if check_username() and check_password():
-    print("Login success.")
-else:
-    print("Username or password is incorrect.")
+check_auth()
